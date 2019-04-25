@@ -55,11 +55,12 @@ body {
 
 body {
     margin: 0;
+    padding: 0;
     font-family: "SegoeUISemiBold", "Arial", sans-serif;
     font-size: 12px;
     line-height: 18px;
     color: white;
-    background-color: #39444b;
+    background-color: #515f67;
 }
 
 header {
@@ -87,11 +88,22 @@ header {
     background-color: #39444b;
 }
 
-.navigation-list .active-link {
+.main-page .active-link {
     color: #4bcaff;
 }
 
+.main-page h2 {
+    margin: 0;
+    padding: 0;
+    font-family: "SegoeUILight", "Arial", sans-serif;
+    font-size: 30px;
+    line-height: 36px; 
+    text-transform: uppercase;
+}
+
 .header-quote p {    
+    margin: 0;
+    padding: 0;
     font-family: "SegoeUILight", "Arial", sans-serif;
     font-size: 42px;
     line-height: 75px;
@@ -99,4 +111,174 @@ header {
     text-align: center;
     background-color: #39444b;
     opacity: 0.85;
+}
+
+.services {
+    color: white;
+    background-color: #4bcaff;
+}
+
+.services-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.services-list h3 {
+    text-transform: uppercase;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.services-list p {
+    margin: 0;
+    padding: 0;
+}
+
+.portfolio {
+    color: #515f67;
+    background-color: white;
+}
+
+.portfolio ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.portfolio-filters a {
+    font-family: "SegoeUIBold", "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #515f67;
+}
+
+.just-default-section p {
+    font-family: "SegoeUIRegular", "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.just-default-section a {
+    font-family: "SegoeUIBold", "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    color: #353f46;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.twitter {
+    color: white;
+    background-color: #4bcaff;
+}
+
+.twitter p {
+    font-family: "SegoeUILight", "Arial", sans-serif;
+    font-size: 28px;
+    line-height: 50px; 
+}
+
+.twitter a {
+    text-decoration: none;
+    color: white;
+    font-family: "SegoeUISemiBold", "Arial", sans-serif;
+}
+
+.john-doe-info {
+    background-image: url("../img/who-is-background.jpg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+
+.john-doe-info p {
+    font-family: "SegoeUIRegular", "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.testimonials {
+    color: #515f67;
+    background-color: white;
+}
+
+.testimonials blockquote {
+    margin: 0;
+    padding: 0;
+    font-family: "SegoeUILight", "Arial", sans-serif;
+    font-size: 28px;
+    line-height: 50px;
+}
+
+.testimonials cite {
+    font-family: "SegoeUIBold", "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 50px;
+    font-style: normal;
+    color: #4bcaff;
+}
+
+.contact {
+    background-image: url("../img/contact-background.jpg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+
+.contact-form {
+    font-family: "SegoeUIBold", "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.contact-form label {
+    text-transform: uppercase;
+}
+
+.contact-form button {    
+    font-family: "SegoeUIBold", "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    color: white;
+    background-color: #4bcaff;
+    border: none;
+}
+
+.contact p,
+.contact address {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 24px;    
+}
+
+.contact address a {
+    color: white;
+    font-size: 14px;
+    line-height: 24px; 
+    text-decoration: none;
+}
+
+footer {
+    font-family: "SegoeUIBold", "Arial", sans-serif;    
+    color: #515f67;
+    background-color: #353f47;
+}
+
+footer ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+footer a {
+    font-family: "SegoeUIBold", "Arial", sans-serif; 
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #515f67;    
+}
+
+footer p {
+    margin: 0;
+    padding: 0;
 }

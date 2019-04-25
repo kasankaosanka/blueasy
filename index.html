@@ -35,7 +35,7 @@
    <main>
        <section class="services" id="services">
            <h2>Services</h2>
-           <ul>
+           <ul class="services-list">
                <li>
                    <h3>Coffee</h3>
                    <p>Apple pie icing sweet. Brownie jelly-o applicake applicake sweet roll liquorice bear claw. Jujubes carrot cake cotton candy sweet tart brownie. Tiramisu applicake jujubes.</p>
@@ -58,7 +58,7 @@
            <h2>Portfolio</h2>
            <ul class="portfolio-filters">
                <li>
-                   <a href="gallery.html">All</a>
+                   <a class="active-link" href="gallery.html">All</a>
                </li>
                <li>
                    <a href="panoramas.html">Panoramas</a>
@@ -125,17 +125,25 @@
        </section>
        <section class="twitter" id="features">
            <h2>Twitter</h2>
-           <p>Unerdwear cookie liquorice. Cake donut cupcake lollipop soufflé candy. Chocolate oat cake <a href="#">@cheesecake</a> tootsie roll.</p>
+           <p>Unerdwear cookie liquorice. Cake donut cupcake lollipop soufflé candy. Chocolate oat cake <a href="twitter.com">@cheesecake</a> tootsie roll.</p>
        </section>
        <section class="john-doe-info">
             <h2>Who is John Doe?</h2>
             <p>Bear claw marzipan bear claw applicake I love muffin. Lemon drops gummi bears pastry gummi bears sesame snaps I love unerdwear.com. Soufflé cotton candy dessert candy ice cream wafer gummies cheesecake brownie.</p>
             <p>Muffin chupa chups jelly beans sweet pie applicake. Croissant chocolate cake I love pudding. Ice cream I love powder pudding apple pie marshmallow. Cupcake marzipan oat cake bonbon I love candy canes toffee.</p>
             <p>Pudding dessert jujubes tiramisu gingerbread croissant tiramisu applicake. Sesame snaps sugar plum cotton candy chocolate bonbon lemon drops candy canes cotton candy. Cake toffee pie bear claw pastry.</p>
-            <a href="twitter.com"></a>
-            <a href="google.com"></a>
-            <a href="dribbble.com"></a>
-            <a href="coffee.com"></a>
+            <a href="twitter.com">
+                <span class="visually-hidden">Twitter</span>
+            </a>
+            <a href="google.com">
+                <span class="visually-hidden">Google</span>
+            </a>
+            <a href="dribbble.com">
+                <span class="visually-hidden">Dribbble</span>
+            </a>
+            <a href="coffee.com">
+                <span class="visually-hidden">Coffee</span>
+            </a>
         </section>
         <section class="testimonials">
             <h2>Testimonials</h2>
@@ -144,21 +152,22 @@
         </section>
         <section class="contact" id="contact">
             <h2>Contact</h2>
-            <form method="post">
+            <form class="contact-form" method="post">
                 <label for="full-name">Full name</label>
                 <input type="text" name="full-name" id="full-name">
                 <label for="email">Email</label>
-                <input type="email" name="email" id="email">
-                <p>Jujubes bear claw croissant wafer sweet lemon drops brownie chocolate bar. Sweet lollipop halvah tootsie roll cake fruitcake. Chocolate cake chocolate bar gingerbread lollipop tart. Jujubes bear claw donut chupa chups.</p>
-                <address>Linda Newman<br>
-                    W325 State Road 123<br>
-                    Mondovi, WI(Wisconsin) 98746-54321<br>
-                    <a href="tel:(715)946-1234">(715) 946 - 1234</a>
-                </address>
+                <input type="email" name="email" id="email">                
                 <label for="message">Message</label>
                 <textarea name="message" id="message"></textarea>
                 <button type="submit">Message</button>
             </form>
+            <p>Jujubes bear claw croissant wafer sweet lemon drops brownie chocolate bar. Sweet lollipop halvah tootsie roll cake fruitcake. Chocolate cake chocolate bar gingerbread lollipop tart. Jujubes bear claw donut chupa chups.</p>
+            <address>
+                Linda Newman<br>
+                W325 State Road 123<br>
+                Mondovi, WI(Wisconsin) 98746-54321<br>
+                <a href="tel:(715)946-1234">(715) 946 - 1234</a>
+            </address>
         </section>
    </main>
    <footer>
