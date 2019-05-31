@@ -63,13 +63,19 @@ body {
     background-color: #515f67;
 }
 
-header {
+.main-header {    
     background-image: url("../img/header-background.jpg");
 }
 
-.main-navigation {
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.main-navigation-wrapper {
+    margin-bottom: 250px;
     background-color: #39444b;
-    opacity: 0.85;
+    opacity: 0.85; 
 }
 
 .navigation-list {
@@ -101,6 +107,10 @@ header {
     text-transform: uppercase;
 }
 
+.header-quote {
+    padding-bottom: 239px;
+}
+
 .header-quote p {    
     margin: 0;
     padding: 0;
@@ -113,9 +123,17 @@ header {
     opacity: 0.85;
 }
 
-.services {
-    color: white;
+.header-quote .first-header-quote {
+    margin-bottom: 14px;
+}
+
+.services-wrapper {        
     background-color: #4bcaff;
+}
+
+.services {
+    padding: 75px 0;
+    color: white;    
 }
 
 .services-list {
@@ -135,9 +153,14 @@ header {
     padding: 0;
 }
 
-.portfolio {
-    color: #515f67;
+.portfolio-wrapper {
     background-color: white;
+}
+
+.portfolio {
+    padding-top: 75px;
+    padding-bottom: 80px;     
+    color: #515f67;    
 }
 
 .portfolio ul {
@@ -155,6 +178,15 @@ header {
     color: #515f67;
 }
 
+.just-default-section-wrapper {
+    background-color: #515f67;
+}
+
+.just-default-section {
+    padding-top: 75px;
+    padding-bottom: 80px;
+}
+
 .just-default-section p {
     font-family: "SegoeUIRegular", "Arial", sans-serif;
     font-size: 14px;
@@ -170,9 +202,13 @@ header {
     text-decoration: none;
 }
 
+.twitter-wrapper {
+    background-color: #4bcaff;  
+}
+
 .twitter {
-    color: white;
-    background-color: #4bcaff;
+    padding: 75px 0;
+    color: white;    
 }
 
 .twitter p {
@@ -187,10 +223,15 @@ header {
     font-family: "SegoeUISemiBold", "Arial", sans-serif;
 }
 
-.john-doe-info {
+.john-doe-info-wrapper {
     background-image: url("../img/who-is-background.jpg");
     background-position: 0 0;
     background-repeat: no-repeat;
+}
+
+.john-doe-info {
+    padding-top: 95px;
+    padding-bottom: 155px;
 }
 
 .john-doe-info p {
@@ -199,9 +240,13 @@ header {
     line-height: 24px;
 }
 
-.testimonials {
-    color: #515f67;
+.testimonials-wrapper {
     background-color: white;
+}
+
+.testimonials {
+    padding: 75px 0;
+    color: #515f67;    
 }
 
 .testimonials blockquote {
@@ -220,10 +265,15 @@ header {
     color: #4bcaff;
 }
 
-.contact {
+.contact-wrapper {
     background-image: url("../img/contact-background.jpg");
     background-position: 0 0;
     background-repeat: no-repeat;
+}
+
+.contact {
+    padding-top: 75px;
+    padding-bottom: 80px;
 }
 
 .contact-form {
@@ -259,10 +309,14 @@ header {
     text-decoration: none;
 }
 
-footer {
-    font-family: "SegoeUIBold", "Arial", sans-serif;    
-    color: #515f67;
+.footer-wrapper {
     background-color: #353f47;
+}
+
+footer {
+    padding: 75px 0;
+    font-family: "SegoeUIBold", "Arial", sans-serif;    
+    color: #515f67;    
 }
 
 footer ul {
