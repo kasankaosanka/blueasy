@@ -78,13 +78,30 @@ body {
     opacity: 0.85; 
 }
 
+.main-navigation {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.main-navigation img {    
+    margin-right: 520px;
+}
+
 .navigation-list {
     list-style: none;    
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.navigation-list a {
+.navigation-list li {
+    margin-right: 47px;    
+}
+
+.navigation-list a {    
     font-family: "SegoeUIBold", "Arial", sans-serif;
     font-size: 14px;
     line-height: 24px;
@@ -94,7 +111,17 @@ body {
     background-color: #39444b;
 }
 
-.main-page .active-link {
+.navigation-list li:first-of-type {
+    margin-right: 30px;
+}
+
+.navigation-list li:last-of-type {
+    margin-right: 0;
+}
+
+.main-page .active-link {    
+    padding: 4px 17px;
+    border: 2px solid #4bcaff;
     color: #4bcaff;
 }
 
@@ -124,7 +151,14 @@ body {
 }
 
 .header-quote .first-header-quote {
+    margin-left: 230px;
     margin-bottom: 14px;
+    width: 715px;
+}
+
+.header-quote .second-header-quote {  
+    margin-left: 90px;  
+    width: 990px;
 }
 
 .services-wrapper {        
@@ -136,10 +170,38 @@ body {
     color: white;    
 }
 
+.services h2 {
+    position: relative;
+}
+
+.services h2::after {
+    content: "";
+    position: absolute;
+    top: 42px;
+    left: 0;
+    width: 45px;
+    height: 2px;
+    background-color: white;
+}
+
 .services-list {
     margin: 0;
     padding: 0;
     list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.services-list li {
+    margin-right: 30px;
+    width: 270px;
+    background-image: url("../img/logo.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+
+.services-list li:last-of-type {
+    margin-right: 0px;
 }
 
 .services-list h3 {
