@@ -194,17 +194,38 @@ body {
 
 .services-list li {
     margin-right: 30px;
-    width: 270px;
-    background-image: url("../img/logo.png");
-    background-position: 0 0;
+    padding-top: 90px;
+    width: 270px;    
+}
+
+.services-list li:first-of-type {
+    background-image: url("../img/coffee-icon.png");
+    background-position: 0 48px;
+    background-repeat: no-repeat;
+}
+
+.services-list li:nth-of-type(2) {
+    background-image: url("../img/instant-icon.png");
+    background-position: 0 48px;
+    background-repeat: no-repeat;
+}
+
+.services-list li:nth-of-type(3) {
+    background-image: url("../img/serious-icon.png");
+    background-position: 0 48px;
     background-repeat: no-repeat;
 }
 
 .services-list li:last-of-type {
     margin-right: 0px;
+    background-image: url("../img/frame-icon.png");
+    background-position: 0 48px;
+    background-repeat: no-repeat;
 }
 
 .services-list h3 {
+    margin-top: 22px;
+    margin-bottom: 9px;
     text-transform: uppercase;
     font-size: 24px;
     line-height: 29px;
@@ -220,15 +241,47 @@ body {
 }
 
 .portfolio {
-    padding-top: 75px;
-    padding-bottom: 80px;     
+    padding-top: 60px;
+    padding-bottom: 50px;     
     color: #515f67;    
 }
 
-.portfolio ul {
+.portfolio-heading-wrapper {
+    padding-bottom: 80px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.portfolio h2 {
+    position: relative;
+    margin-right: 474px;
+}
+
+.portfolio h2::after {
+    content: "";
+    position: absolute;
+    top: 42px;
+    left: 0;
+    width: 45px;
+    height: 2px;
+    background-color: #515f67;
+}
+
+.portfolio-filters {    
     list-style: none;
     margin: 0;
     padding: 0;
+    padding-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.portfolio-filters li {
+    margin-right: 50px;
+}
+
+.portfolio-filters li:last-of-type {
+    margin-right: 0;
 }
 
 .portfolio-filters a {
@@ -240,6 +293,27 @@ body {
     color: #515f67;
 }
 
+.gallery {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery li {
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.gallery li:nth-of-type(4n) {
+    margin-right: 0;
+}
+
+.gallery a {
+    display: block;
+}
+
 .just-default-section-wrapper {
     background-color: #515f67;
 }
@@ -247,19 +321,46 @@ body {
 .just-default-section {
     padding-top: 75px;
     padding-bottom: 80px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.just-default-section p {
+.just-default-text-wrapper {
+    width: 500px;
+    margin-right: 110px;
+}
+
+.just-default-section h2 {
+    padding-bottom: 45px;
+    position: relative;
+}
+
+.just-default-section h2::after {
+    content: "";
+    position: absolute;
+    top: 42px;
+    left: 0;
+    width: 45px;
+    height: 2px;
+    background-color: white;
+}
+
+.just-default-section p {    
+    margin: 0;
+    margin-bottom: 30px;
+    padding: 0;
     font-family: "SegoeUIRegular", "Arial", sans-serif;
     font-size: 14px;
     line-height: 24px;
 }
 
 .just-default-section a {
+    padding: 8px 38px;
     font-family: "SegoeUIBold", "Arial", sans-serif;
     font-size: 14px;
     line-height: 24px;
     color: #353f46;
+    border: 2px solid #353f46;
     text-transform: uppercase;
     text-decoration: none;
 }
@@ -269,8 +370,34 @@ body {
 }
 
 .twitter {
-    padding: 75px 0;
+    padding: 75px 0 65px;
     color: white;    
+}
+
+.twitter h2 {
+    position: relative;
+}
+
+.twitter h2::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    right: 0;
+    width: 26px;
+    height: 24px;
+    background-image: url("../img/twitter-icon.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+
+.twitter h2::after {
+    content: "";
+    position: absolute;
+    top: 42px;
+    left: 0;
+    width: 45px;
+    height: 2px;
+    background-color: white;
 }
 
 .twitter p {
