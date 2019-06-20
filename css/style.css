@@ -63,6 +63,22 @@ body {
     background-color: #515f67;
 }
 
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .main-header {    
     background-image: url("../img/header-background.jpg");
 }
@@ -420,13 +436,86 @@ body {
 
 .john-doe-info {
     padding-top: 95px;
-    padding-bottom: 155px;
+    padding-bottom: 135px;
+}
+
+.john-doe-info h2 {
+    position: relative;
+}
+
+.john-doe-info h2::after {
+    content: "";
+    position: absolute;
+    top: 42px;
+    left: 0;
+    width: 45px;
+    height: 2px;
+    background-color: white;
+}
+
+.john-doe-info-text-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 35px;
+}
+
+.john-doe-info-text-wrapper {
+    margin-right: 30px;
+    width: 570px;
+}
+
+.john-doe-info-social-wrapper {
+    width: 570px;
 }
 
 .john-doe-info p {
+    margin: 0;
+    margin-bottom: 30px;
+    padding: 0;
     font-family: "SegoeUIRegular", "Arial", sans-serif;
     font-size: 14px;
     line-height: 24px;
+}
+
+.social-buttons-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;    
+}
+
+.social-buttons-list .social-button {
+    margin-right: 20px;
+    display: block;
+    width: 60px;
+    height: 60px;
+    border: 2px solid white;
+}
+
+.social-buttons-list .twitter {
+    padding: 0;
+    background-image: url("../img/twitter-icon.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.social-buttons-list .google {
+    background-image: url("../img/google-plus-icon.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.social-buttons-list .dribbble {
+    background-image: url("../img/dribbble-icon.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.social-buttons-list .coffee {
+    background-image: url("../img/coffee-social-icon.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
 }
 
 .testimonials-wrapper {
@@ -434,12 +523,28 @@ body {
 }
 
 .testimonials {
-    padding: 75px 0;
+    padding: 75px 0 55px;
     color: #515f67;    
+}
+
+.testimonials h2 {
+    margin-bottom: 35px;
+    position: relative;
+}
+
+.testimonials h2::after {
+    content: "";
+    position: absolute;
+    top: 42px;
+    left: 0;
+    width: 45px;
+    height: 2px;
+    background-color: #515f67;
 }
 
 .testimonials blockquote {
     margin: 0;
+    margin-bottom: 15px;
     padding: 0;
     font-family: "SegoeUILight", "Arial", sans-serif;
     font-size: 28px;
@@ -447,6 +552,8 @@ body {
 }
 
 .testimonials cite {
+    margin: 0;
+    padding: 0;
     font-family: "SegoeUIBold", "Arial", sans-serif;
     font-size: 14px;
     line-height: 50px;
@@ -463,6 +570,20 @@ body {
 .contact {
     padding-top: 75px;
     padding-bottom: 80px;
+}
+
+.contact h2 {
+    position: relative;
+}
+
+.contact h2::after {
+    content: "";
+    position: absolute;
+    top: 42px;
+    left: 0;
+    width: 45px;
+    height: 2px;
+    background-color: white;
 }
 
 .contact-form {
@@ -502,26 +623,54 @@ body {
     background-color: #353f47;
 }
 
-footer {
+.page-footer {
     padding: 75px 0;
+    display: flex;
+    flex-wrap: wrap;
     font-family: "SegoeUIBold", "Arial", sans-serif;    
     color: #515f67;    
 }
 
-footer ul {
+.footer-link-list {
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-wrap: wrap;
     list-style: none;
 }
 
-footer a {
+.footer-link-list li {
+    padding-right: 15px;
+    margin-right: 15px;
+    position: relative;
+}
+
+.footer-link-list li:last-of-type {
+    padding-right: 0;
+    margin-right: 0;
+}
+
+.footer-link-list li:nth-of-type(1)::after,
+.footer-link-list li:nth-of-type(2)::after,
+.footer-link-list li:nth-of-type(3)::after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 12px;
+    top: 4px;
+    right: 0;
+    background-color: #515f67;
+}
+
+.footer-link-list a {
     font-family: "SegoeUIBold", "Arial", sans-serif; 
     text-decoration: none;
     text-transform: uppercase;
     color: #515f67;    
 }
 
-footer p {
+.page-footer p {
     margin: 0;
+    margin-left: auto;
     padding: 0;
 }
