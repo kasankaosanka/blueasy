@@ -1,6 +1,6 @@
 html, 
 body {
-    min-width: 1170px;
+    min-width: 1210px;
 }
 
 @font-face {
@@ -127,6 +127,11 @@ input[type="radio"].visually-hidden {
     background-color: #39444b;
 }
 
+.navigation-list a:hover,
+.navigation-list a:focus {
+    text-decoration: underline;
+}
+
 .navigation-list li:first-of-type {
     margin-right: 30px;
 }
@@ -139,6 +144,12 @@ input[type="radio"].visually-hidden {
     padding: 4px 17px;
     border: 2px solid #4bcaff;
     color: #4bcaff;
+}
+
+.main-page .active-link:hover,
+.main-page .active-link:focus {
+    text-decoration: none;    
+    border-color: white;
 }
 
 .main-page h2 {
@@ -309,6 +320,11 @@ input[type="radio"].visually-hidden {
     color: #515f67;
 }
 
+.portfolio-filters a:hover,
+.portfolio-filters a:focus {
+    text-decoration: underline;
+}
+
 .gallery {
     list-style: none;
     margin: 0;
@@ -320,6 +336,7 @@ input[type="radio"].visually-hidden {
 .gallery li {
     margin-right: 30px;
     margin-bottom: 30px;
+    position: relative;
 }
 
 .gallery li:nth-of-type(4n) {
@@ -328,6 +345,26 @@ input[type="radio"].visually-hidden {
 
 .gallery a {
     display: block;
+}
+
+.gallery .on-hover {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 270px;
+    height: 270px;
+    background-color: #495259;
+    background-image: url("../img/plus-icon.png");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    opacity: 0.9;
+}
+
+.gallery li:hover .on-hover {
+    display: block;
+    cursor: pointer;
 }
 
 .just-default-section-wrapper {
@@ -379,6 +416,12 @@ input[type="radio"].visually-hidden {
     border: 2px solid #353f46;
     text-transform: uppercase;
     text-decoration: none;
+}
+
+.just-default-section a:hover,
+.just-default-section a:focus {
+    color: #4bcaff;
+    border-color: #4bcaff;
 }
 
 .twitter-wrapper {
@@ -493,6 +536,11 @@ input[type="radio"].visually-hidden {
     border: 2px solid white;
 }
 
+.social-buttons-list .social-button:hover,
+.social-buttons-list .social-button:focus {
+    background-color: #4bcaff; 
+}
+
 .social-buttons-list .twitter {
     padding: 0;
     background-image: url("../img/twitter-icon.png");
@@ -530,6 +578,18 @@ input[type="radio"].visually-hidden {
 .testimonials h2 {
     margin-bottom: 35px;
     position: relative;
+}
+
+.testimonials h2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 32px;
+    height: 26px;
+    background-image: url("../img/quote.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
 }
 
 .testimonials h2::after {
@@ -587,13 +647,54 @@ input[type="radio"].visually-hidden {
 }
 
 .contact-form {
+    margin: 0;
+    margin-top: 35px;
+    padding: 0;
     font-family: "SegoeUIBold", "Arial", sans-serif;
     font-size: 14px;
     line-height: 24px;
 }
 
+.name-email-address-wrapper {    
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.name-and-email-wrapper {
+    margin-right: 130px;
+}
+
+.full-name-wrapper {
+    margin-bottom: 35px;
+    width: 470px;
+}
+
+.email-wrapper {
+    margin-bottom: 35px;
+    width: 470px;
+}
+
+.contact-text-wrapper {
+    width: 570px;
+}
+
+.contact-text-wrapper p {
+    margin-bottom: 35px;
+}
+
 .contact-form label {
     text-transform: uppercase;
+}
+
+.contact-form input {
+    padding: 16px 8px;
+    width: 100%;
+    font-family: "SegoeUIBold", "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    color: white;
+    background-color: transparent;
+    border: 2px solid white;
 }
 
 .contact-form button {    
@@ -617,6 +718,44 @@ input[type="radio"].visually-hidden {
     font-size: 14px;
     line-height: 24px; 
     text-decoration: none;
+}
+
+.message-wrapper {
+    width: 1170px;
+}
+
+.message-wrapper textarea {
+    margin-bottom: 35px;
+    padding: 16px 8px;
+    min-height: 184px;
+    width: 1150px;
+    font-family: "SegoeUIBold", "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    color: white;
+    background-color: transparent;
+    border: 2px solid white;
+    resize: none;
+}
+
+.contact-form input:hover,
+.contact-form textarea:hover,
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color:  #4bcaff;
+}
+
+.message-wrapper button {
+    padding: 18px 150px;
+    display: block;
+    text-transform: uppercase;
+}
+
+.message-wrapper button:hover,
+.message-wrapper button:focus,
+.message-wrapper button:active {
+    background-color: rgba(75, 202, 255, 0.9);
+    cursor: pointer;
 }
 
 .footer-wrapper {
@@ -667,6 +806,11 @@ input[type="radio"].visually-hidden {
     text-decoration: none;
     text-transform: uppercase;
     color: #515f67;    
+}
+
+.footer-link-list a:hover,
+.footer-link-list a:focus {
+    text-decoration: underline;
 }
 
 .page-footer p {
